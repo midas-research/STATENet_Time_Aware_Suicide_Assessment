@@ -256,6 +256,9 @@ def main(config):
     print(best_metric.item())
     model.load_state_dict(best_model_wts)
 
+    if not os.path.exists('saved_model'):
+    	os.mkdir("saved_model")
+
     torch.save(model.state_dict(), os.path.join(DATA_DIR, f'saved_model/best_model_{model_name}.pt'))
 
     _, _, y_pred, y_true = eval_loop(model, val_dataloader, device, len(val_dataset))
