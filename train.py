@@ -293,7 +293,7 @@ def main(config):
 
 if __name__ == '__main__':
     base_model_set = {"historic", "historic-current", "current"}
-    model_set = {"stage-net", "tlstm", "bilstm", "bilstm-attention"}
+    model_set = {"tlstm", "bilstm", "bilstm-attention"}
 
     parser = argparse.ArgumentParser(description="Temporal Suicidal Modelling")
     parser.add_argument("-lr", "--learning-rate", default=1e-3, type=float)
