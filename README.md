@@ -1,5 +1,5 @@
 # A Time-Aware Transformer based model for Suicide Risk Assessment on Social Media
-This codebase contains the python scripts for STATENet, the base model for the EMNLP20 paper [link].
+This codebase contains the python scripts for STATENet, the base model for the EMNLP20 paper [link](https://www.aclweb.org/anthology/2020.emnlp-main.619/).
 
 ## Environment & Installation Steps
 Python 3.6 & Pytorch 1.5
